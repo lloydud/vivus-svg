@@ -1,7 +1,12 @@
 # vivus-svg
 
-An element providing a starting point for your own reusable Polymer elements.
+A lightweight wrapper around [vivus-svg](https://github.com/maxwellito/vivus#vivusjs)
 
+## Usage
+
+```html
+<vivus-svg file="hi.svg" type="scenario-sync" start="autostart" duration="20" dash-gap="20" force-render="false"></vivus-svg>
+```
 
 ## Dependencies
 

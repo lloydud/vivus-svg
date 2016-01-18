@@ -18,31 +18,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </head>
   <body unresolved>
 
-    <p>An example of <code>&lt;vivus-svg&gt;</code>:</p>
-
-    <p>Make words! <button id="saybtn">Say Something</button></p>
-    <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
-
-    <vivus-svg author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
-      <h2>Hello vivus-svg</h2>
-    </vivus-svg>
-
-    <script>
-      var seedElement = document.querySelector('vivus-svg');
-
-      document.querySelector('#saybtn').addEventListener('click', function() {
-        alert(seedElement.sayHello('Hallo!'));
-      });
-
-      document.querySelector('#laserbtn').addEventListener('click', function() {
-        seedElement.fireLasers();
-      });
-
-      document.addEventListener("vivus-svg-lasers", function(e) {
-        console.log(e.detail.sound);
-      });
-
-    </script>
+    <vivus-svg file="hi.svg" type="scenario-sync" start="autostart" duration="20" dash-gap="20" force-render="false"></vivus-svg>
 
   </body>
 </html>
