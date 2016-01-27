@@ -101,6 +101,11 @@ Example:
         }
       },
 
+      animate: function () {
+        this._img.reset();
+        this._img.play();
+      },
+
       ready: function () {
         var that = this;
         this._img = new Vivus(this.$.svg,
